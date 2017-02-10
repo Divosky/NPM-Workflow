@@ -1,0 +1,11 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+html, body { height: 100%; }
+
+body {
+  background: $main-bg;
+  font-size: 18px;
+  color: $main-color;
+}
