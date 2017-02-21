@@ -15,12 +15,8 @@
     "build:js": "npm run lint",
     "build:js-dist": "npm run lint && npm run uglify",
     "build:html": "html-minifier --config-file html-minifier.conf --input-dir src --output-dir dist --file-ext html",
-    "imagemin": "imagemin src/images/* -o src/images",
-    "imagemin-dist": "imagemin src/images/* -o dist/images",
-    "icons": "svgo -f src/images/icons -o src/images/icons && svg-sprite-generate -d src/images/icons -o src/images/icons/sprite.svg",
-    "icons-dist": "svgo -f src/images/icons -o dist/images/icons && svg-sprite-generate -d dist/images/icons -o dist/images/icons/sprite.svg",
-    "build:images": "npm run imagemin && npm run icons",
-    "build:images-dist": "npm run imagemin-dist && npm run icons-dist",
+    "build:images": "imagemin src/images/* -o src/images",
+    "build:images-dist": "imagemin src/images/* -o dist/images",
     "build:all": "npm run build:css && npm run build:js && npm run build:images",
     "build:all-dist": "npm run build:css-dist && npm run build:js-dist && npm run build:images-dist && npm run build:html",
     "watch:scss": "onchange \"src/scss\" -- npm run build:css",
@@ -45,8 +41,6 @@
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.6.0",
-    "svg-sprite-generator": "0.0.7",
-    "svgo": "^0.6.6",
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
