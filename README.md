@@ -5,23 +5,17 @@ Workflow using npm scripts, no gulp.
 ## Installation
 
 ```sh
-$ cd /opt/lampp/htdocs
-$ git clone
+$ git clone git@github.com:Divosky/NPM-Workflow.git
+$ npm install
 ```
 
-## Usage
+### Optionally
 
-- (optional) Open `package.json` file and edit 7th line. Edit `--proxy` to change your server's name and `--startPath` to change website's directory.
-- Use the commands listed below:
-
-  ```sh
-  $ cd /opt/lampp/htdocs/Workflow
-  $ npm rebuild
-  ```
+- Open `package.json` file and edit 7th line. Edit `--proxy` to change your server's name and `--startPath` to change website's directory.
 
 ### Commands
 
-      Command       | Result
+|      Command       | Result |
 :-----------------: | ------------------------------------------------------------------------------
       `serve`       | Browser synchronization + run a server
   `autoprefixer`    | Run autoprefixer
@@ -49,14 +43,9 @@ $ git clone
     `watch:all`     | Run a server and watch all the files
    `postinstall`    | Run `build:all` and `watch:all`
 
-#### Why so many commands?
-
-I needed them. I use normal commands without affix while working, and those with it just to build the project.
-
 ## Tested
 
 Tested on:
-
 - npm version: 4.2.0
 - node version: 7.5.0
-- Linux
+- Linux Arch, Linux Mint
